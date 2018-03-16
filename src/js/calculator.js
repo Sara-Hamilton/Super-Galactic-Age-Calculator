@@ -34,23 +34,6 @@ export class Calculator {
   }
 
   ageOnPlanet(planet) {
-    // let factor = 0;
-    // switch (planet) {
-    //   case 'Mercury':
-    //     factor = .24;
-    //     break;
-    //   case 'Venus':
-    //     factor = .62;
-    //     break;
-    //   case 'Mars':
-    //     factor = 1.88;
-    //     break;
-    //   case 'Jupiter':
-    //     factor = 11.86;
-    //     break;
-    //   default:
-    //     factor = 1;
-    // }
     let factor = this.planetFactor(planet);
     let planetAge = Math.floor(this.earthAge/factor);
     return planetAge;
@@ -58,26 +41,6 @@ export class Calculator {
 
   planetExpectancy(planet) {
     const lifeExpectancy = 79;
-    // let factor = 0;
-    // switch (planet) {
-    //   case 'Earth':
-    //     factor = 1;
-    //     break;
-    //   case 'Mercury':
-    //     factor = .24;
-    //     break;
-    //   case 'Venus':
-    //     factor = .62;
-    //     break;
-    //   case 'Mars':
-    //     factor = 1.88;
-    //     break;
-    //   case 'Jupiter':
-    //     factor = 11.86;
-    //     break;
-    //   default:
-    //     factor = 1;
-    // }
     let factor = this.planetFactor(planet);
     let difference = Math.floor((lifeExpectancy - this.earthAge)/factor);
     if (difference > 0) {
