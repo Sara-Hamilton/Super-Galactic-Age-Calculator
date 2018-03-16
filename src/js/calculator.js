@@ -52,7 +52,7 @@ export class Calculator {
     } else if (difference === 0) {
       return "Your age is at the average life expectancy in Mercury years."
     } else {
-      return `Your age is ${-difference} years past the average life expectancy in Mercury Years.`;
+      return `Your age is ${-difference} years past the average life expectancy in Mercury years.`;
     }
   }
 
