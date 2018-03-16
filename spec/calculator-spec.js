@@ -41,7 +41,8 @@ describe('Calculator', function() {
 
   it('will return difference between current age and life expectancy', function(){
     let result = reusableCalculator.compareToEarthExpectancy();
-    expect(result).toEqual(49);
+    // expect(result).toEqual(49);
+    expect(result).toEqual("Your age is 49 years less than the average life expectancy.")
   })
 
   it('will return a negative number if age exceeds life expectancy', function(){
