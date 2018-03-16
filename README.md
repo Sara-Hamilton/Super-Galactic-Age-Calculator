@@ -13,10 +13,10 @@ _This is the Epicodus weekly project for week 1 of the JavaScript course. Its pu
 ### Specifications
 * Take a person’s age in years and convert it into seconds.
   * sample input: 30
-  * sample output: 946,708,560,000  
+  * sample output: 946,080,000
 * Take two dates and determine the difference, in seconds, between the two.
   * sample input: 3-16-17, 3-16-18
-  * sample output: 31,556,952,
+  * sample output: 31,536,000
 * Take in a person's age and return the age in Mercury years. (A Mercury year is .24 Earth years.)
   * sample input: 30
   * sample output: 187
