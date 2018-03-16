@@ -9,6 +9,6 @@ describe('Calculator', function() {
 
   it('will convert years to seconds', function() {
     let result = reusableCalculator.convertToSeconds();
-    expect(result).toEqual(30);
+    expect(result).toEqual(946080000);
   })
 });

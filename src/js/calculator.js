@@ -4,6 +4,6 @@ export class Calculator {
   }
 
   convertToSeconds() {
-    return this.earthAge * 31536000;
+    return (this.earthAge * 31536000);
   }
 }
