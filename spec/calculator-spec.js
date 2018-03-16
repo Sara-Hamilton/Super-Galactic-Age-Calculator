@@ -26,6 +26,6 @@ describe('Calculator', function() {
 
   it('will convert Earth age to Venus age', function(){
     let result = reusableCalculator.ageOnVenus();
-    expect(result).toEqual(30);
+    expect(result).toEqual(48);
   })
 })
