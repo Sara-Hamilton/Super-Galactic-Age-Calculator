@@ -59,7 +59,13 @@ export class Calculator {
   venusExpectancy() {
     const lifeExpectancy = 79;
     let difference = Math.floor((lifeExpectancy - this.earthAge)/.62);
-    return difference;
+    if (difference > 0) {
+      return `Your age is ${difference} years less than the average life expectancy in Venus years.`;
+    } else if (difference === 0) {
+      return "Your age is at the average life expectancy in Venus years."
+    } else {
+      return `Your age is ${-difference} years past the average life expectancy in Venus years.`;
+    }
   }
 
   marsExpectancy() {
