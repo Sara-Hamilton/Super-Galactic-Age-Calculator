@@ -36,18 +36,24 @@ export class Calculator {
     const lifeExpectancy = 79;
     let difference = lifeExpectancy - this.earthAge;
     if (difference > 0) {
-      return `Your age is ${difference} years less than the average life expectancy.`;
+      return `Your age is ${difference} years less than the average life expectancy in Earth years.`;
     } else if (difference === 0) {
-      return "Your age is at the average life expectancy."
+      return "Your age is at the average life expectancy in Earth years."
     } else {
-      return `Your age is ${-difference} years past the average life expectancy.`;
+      return `Your age is ${-difference} years past the average life expectancy in Earth years.`;
     }
   }
 
   mercuryExpectancy() {
     const lifeExpectancy = 79;
     let difference = Math.floor((lifeExpectancy - this.earthAge)/.24);
-    return difference;
+    if (difference > 0) {
+      return `Your age is ${difference} years less than the average life expectancy in Mercury years.`;
+    } else if (difference === 0) {
+      return "Your age is at the average life expectancy in Mercury years."
+    } else {
+      return `Your age is ${-difference} years past the average life expectancy in Mercury Years.`;
+    }
   }
 
   venusExpectancy() {
