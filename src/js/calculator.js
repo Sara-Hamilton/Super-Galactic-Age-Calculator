@@ -16,4 +16,9 @@ export class Calculator {
     let mercuryAge = Math.round(this.earthAge/.24);
     return mercuryAge;
   }
+
+  ageOnVenus() {
+    let venusAge = Math.round(this.earthAge/.62);
+    return venusAge;
+  }
 }
