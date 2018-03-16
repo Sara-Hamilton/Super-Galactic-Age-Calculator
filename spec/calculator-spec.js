@@ -21,6 +21,6 @@ describe('Calculator', function() {
 
   it('will convert Earth age to Mercury age', function(){
     let result = reusableCalculator.ageOnMercury();
-    expect(result).toEqual(30);
+    expect(result).toEqual(125);
   })
 })
