@@ -38,4 +38,9 @@ describe('Calculator', function() {
     let result = reusableCalculator.ageOnJupiter();
     expect(result).toEqual(2);
   })
+
+  it('will return difference between current age and life expectancy', function(){
+    let result = reusableCalculator.compareToEarthExpectancy();
+    expect(result).toEqual(30);
+  })
 })
