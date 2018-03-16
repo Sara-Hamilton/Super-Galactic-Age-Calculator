@@ -111,4 +111,16 @@ describe('Calculator', function() {
     let result = reusableCalculator.jupiterExpectancy();
     expect(result).toEqual(4);
   })
+
+  it('will return a message if age equals life expectancy on Jupiter', function(){
+    let seniorCalculator = new Calculator(79);
+    let result = seniorCalculator.jupiterExpectancy();
+    expect(result).toEqual("Your age is not at the average life expectancy in Jupiter years.");
+  })
+
+  it('will return a message if age exceeds life expectancy on Jupiter', function(){
+    let seniorCalculator = new Calculator(90);
+    let result = seniorCalculator.jupiterExpectancy();
+    expect(result).toEqual("Your age is 6 years past the average life expectancy in Jupiter years.");
+  })
 })
