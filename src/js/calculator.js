@@ -71,7 +71,13 @@ export class Calculator {
   marsExpectancy() {
     const lifeExpectancy = 79;
     let difference = Math.floor((lifeExpectancy - this.earthAge)/1.88);
-    return difference;
+    if (difference > 0) {
+      return `Your age is ${difference} years less than the average life expectancy in Mars years.`;
+    } else if (difference === 0) {
+      return "Your age is at the average life expectancy in Mars years."
+    } else {
+      return `Your age is ${-difference} years past the average life expectancy in Mars years.`;
+    }
   }
 
   jupiterExpectancy() {
