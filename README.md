@@ -48,7 +48,7 @@ git clone https://github.com/Sara-Hamilton/Super-Galactic-Age-Calculator.git
 * _Move into the directory_
 
 ```
-cd galactic-calculator
+cd Super-Galactic-Age-Calculator
 ```
 
 * _Install npm_
