@@ -123,4 +123,9 @@ describe('Calculator', function() {
     let result = seniorCalculator.jupiterExpectancy();
     expect(result).toEqual("Your age is 1 years past the average life expectancy in Jupiter years.");
   })
+
+  it('will return difference between current age and life expectancy in Jupiter years', function(){
+    let result = reusableCalculator.planetExpectancy("Jupiter");
+    expect(result).toEqual("Your age is 4 years less than the average life expectancy in Jupiter years.");
+  })
 })
