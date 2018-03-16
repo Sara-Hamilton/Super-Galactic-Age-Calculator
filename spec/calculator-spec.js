@@ -47,6 +47,6 @@ describe('Calculator', function() {
   it('will return a negative number if age exceeds life expectancy', function(){
     let seniorCalculator = new Calculator(90);
     let result = seniorCalculator.compareToEarthExpectancy();
-    expect(result).toEqual(11);
+    expect(result).toEqual(-11);
   })
 })
