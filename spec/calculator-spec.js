@@ -75,19 +75,19 @@ describe('Calculator', function() {
 
   it('will return difference between current age and life expectancy in Venus years', function(){
     let result = reusableCalculator.venusExpectancy();
-    expect(result).toEqual(79);
+    expect(result).toEqual("Your age is 79 years less than the average life expectancy in Venus years.");
   })
 
   it('will return a message if age equals life expectancy on Venus', function(){
     let seniorCalculator = new Calculator(79);
     let result = seniorCalculator.venusExpectancy();
-    expect(result).toEqual("Your age is not at the average life expectancy in Venus years.");
+    expect(result).toEqual("Your age is at the average life expectancy in Venus years.");
   })
 
   it('will return a message if age exceeds life expectancy on Venus', function(){
     let seniorCalculator = new Calculator(90);
     let result = seniorCalculator.venusExpectancy();
-    expect(result).toEqual("Your age is 46 years past the average life expectancy in Venus years.");
+    expect(result).toEqual("Your age is 18 years past the average life expectancy in Venus years.");
   })
 
   it('will return difference between current age and life expectancy in Mars years', function(){
