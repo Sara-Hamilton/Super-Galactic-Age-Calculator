@@ -61,6 +61,7 @@ npm install
 ```
 npm run start
 ```
+* _The app will open in a Chrome browser window_
 * _Follow the prompts_
 
 ## Testing
