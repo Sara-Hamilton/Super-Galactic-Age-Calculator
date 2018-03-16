@@ -31,6 +31,6 @@ describe('Calculator', function() {
 
   it('will convert Earth age to Mars age', function(){
     let result = reusableCalculator.ageOnMars();
-    expect(result).toEqual(30);
+    expect(result).toEqual(16);
   })
 })
