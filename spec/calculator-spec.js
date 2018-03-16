@@ -36,6 +36,6 @@ describe('Calculator', function() {
 
   it('will convert Earth age to Jupiter age', function(){
     let result = reusableCalculator.ageOnJupiter();
-    expect(result).toEqual(30);
+    expect(result).toEqual(2);
   })
 })

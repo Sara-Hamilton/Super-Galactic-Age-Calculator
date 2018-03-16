@@ -28,7 +28,7 @@ _This is the Epicodus weekly project for week 1 of the JavaScript course. Its pu
   * sample output: 16
 * Take in a person's age and return the age in Jupiter years. (A Jupiter year is 11.86 Earth years.)
   * sample input: 30
-  * sample output: 2.5
+  * sample output: 2
 * Determine how many years a user has left to live on each planet based on life expectancy.
   * sample input: Earth age: 30, life expectancy: 80 years
   * sample output: Mercury: 208 years, Venus: 81 years, Mars: 26.5 years, Jupiter: 4 years
