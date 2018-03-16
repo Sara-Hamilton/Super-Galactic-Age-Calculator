@@ -34,26 +34,6 @@ export class Calculator {
     return planetAge;
   }
 
-  ageOnMercury() {
-    let mercuryAge = Math.floor(this.earthAge/.24);
-    return mercuryAge;
-  }
-
-  ageOnVenus() {
-    let venusAge = Math.floor(this.earthAge/.62);
-    return venusAge;
-  }
-
-  ageOnMars() {
-    let marsAge = Math.floor(this.earthAge/1.88);
-    return marsAge;
-  }
-
-  ageOnJupiter() {
-    let jupiterAge = Math.floor(this.earthAge/11.86);
-    return jupiterAge;
-  }
-
   planetExpectancy(planet) {
     const lifeExpectancy = 79;
     let factor = 0;
