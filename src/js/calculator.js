@@ -44,4 +44,10 @@ export class Calculator {
     return difference;
   }
 
+  venusExpectancy() {
+    const lifeExpectancy = 79;
+    let difference = Math.floor((lifeExpectancy - this.earthAge)/.62);
+    return difference;
+  }
+
 }
