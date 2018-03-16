@@ -56,4 +56,10 @@ export class Calculator {
     return difference;
   }
 
+  jupiterExpectancy() {
+    const lifeExpectancy = 79;
+    let difference = Math.floor((lifeExpectancy - this.earthAge)/11.86);
+    return difference;
+  }
+
 }

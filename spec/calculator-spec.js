@@ -64,4 +64,9 @@ describe('Calculator', function() {
     let result = reusableCalculator.marsExpectancy();
     expect(result).toEqual(26);
   })
+
+  it('will return difference between current age and life expectancy in Jupiter years', function(){
+    let result = reusableCalculator.jupiterExpectancy();
+    expect(result).toEqual(30);
+  })
 })
