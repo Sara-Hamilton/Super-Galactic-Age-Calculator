@@ -31,7 +31,7 @@ describe('Calculator', function() {
 
   it('will convert Earth age to Mars age', function(){
     let result = reusableCalculator.ageOnMars();
-    expect(result).toEqual(16);
+    expect(result).toEqual(15);
   })
 
   it('will convert Earth age to Jupiter age', function(){
@@ -41,6 +41,6 @@ describe('Calculator', function() {
 
   it('will return difference between current age and life expectancy', function(){
     let result = reusableCalculator.compareToEarthExpectancy();
-    expect(result).toEqual(30);
+    expect(result).toEqual(49);
   })
 })
