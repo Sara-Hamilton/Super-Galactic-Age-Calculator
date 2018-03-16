@@ -43,4 +43,10 @@ describe('Calculator', function() {
     let result = reusableCalculator.compareToEarthExpectancy();
     expect(result).toEqual(49);
   })
+
+  it('will return a negative number if age exceeds life expectancy', function(){
+    let seniorCalculator = new Calculator(90);
+    let result = seniorCalculator.compareToEarthExpectancy();
+    expect(result).toEqual(11);
+  })
 })
