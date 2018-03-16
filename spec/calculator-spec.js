@@ -28,4 +28,9 @@ describe('Calculator', function() {
     let result = reusableCalculator.ageOnVenus();
     expect(result).toEqual(48);
   })
+
+  it('will convert Earth age to Mars age', function(){
+    let result = reusableCalculator.ageOnMars();
+    expect(result).toEqual(30);
+  })
 })
