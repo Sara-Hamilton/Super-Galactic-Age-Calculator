@@ -68,6 +68,12 @@ npm run start
 * _Run tests_
 
 ```
+npm install
+```
+```
+npm run build
+```
+```
 npm run test
 ```
 Tests run continuously. Results can be seen in both the CLI and the browser.  Go to http://localhost:9876/debug.html to refresh the browser view.  Tests can be stopped with Ctrl + C.
