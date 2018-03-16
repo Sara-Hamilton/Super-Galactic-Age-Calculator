@@ -38,4 +38,10 @@ export class Calculator {
     return difference;
   }
 
+  mercuryExpectancy() {
+    const lifeExpectancy = 79;
+    let difference = Math.floor((lifeExpectancy - this.earthAge)/.24);
+    return difference;
+  }
+
 }

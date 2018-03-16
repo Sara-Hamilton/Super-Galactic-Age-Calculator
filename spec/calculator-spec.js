@@ -49,4 +49,9 @@ describe('Calculator', function() {
     let result = seniorCalculator.compareToEarthExpectancy();
     expect(result).toEqual(-11);
   })
+
+  it('will return difference between current age and life expectancy in Mercury years', function(){
+    let result = reusableCalculator.mercuryExpectancy();
+    expect(result).toEqual(30);
+  })
 })
