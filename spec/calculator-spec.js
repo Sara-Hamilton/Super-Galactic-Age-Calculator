@@ -44,6 +44,12 @@ describe('Calculator', function() {
     expect(result).toEqual("Your age is 49 years less than the average life expectancy.")
   })
 
+  it('will return a message if age equals life expectancy', function(){
+    let seniorCalculator = new Calculator(79);
+    let result = seniorCalculator.compareToEarthExpectancy();
+    expect(result).toEqual("Your age is 11 years past the average life expectancy.");
+  })
+
   it('will return a message if age exceeds life expectancy', function(){
     let seniorCalculator = new Calculator(90);
     let result = seniorCalculator.compareToEarthExpectancy();

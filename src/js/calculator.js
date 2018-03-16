@@ -35,8 +35,10 @@ export class Calculator {
   compareToEarthExpectancy() {
     const lifeExpectancy = 79;
     let difference = lifeExpectancy - this.earthAge;
-    if (difference >= 0) {
+    if (difference > 0) {
       return `Your age is ${difference} years less than the average life expectancy.`;
+    } else if (difference === 0) {
+      return "Your age is at the average life expectancy."
     } else {
       return `Your age is ${-difference} years past the average life expectancy.`;
     }
