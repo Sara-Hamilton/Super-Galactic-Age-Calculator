@@ -1,6 +1,6 @@
 # Super Galactic Age Calculator
 
-#### JavaScript based web app that converts a person's age to the age they would be based the year length for Mercury, Venus, Mars, and Jupiter. 3/16/2018.
+#### JavaScript based web app that converts a person's age to the age they would be based the year length for Mercury, Venus, Mars, and Jupiter, 3/16/2018.
 
 #### _By Sara Hamilton_
 
@@ -48,7 +48,7 @@ git clone https://github.com/Sara-Hamilton/Super-Galactic-Age-Calculator.git
 * _Move into the directory_
 
 ```
-cd tmnt-rpg
+cd galactic-calculator
 ```
 
 * _Install npm_
