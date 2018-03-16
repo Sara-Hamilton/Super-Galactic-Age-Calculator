@@ -40,87 +40,87 @@ describe('Calculator', function() {
   })
 
   it('will return difference between current age and life expectancy on Earth', function(){
-    let result = reusableCalculator.compareToEarthExpectancy();
+    let result = reusableCalculator.planetExpectancy("Earth");
     expect(result).toEqual("Your age is 49 years less than the average life expectancy in Earth years.")
   })
 
   it('will return a message if age equals life expectancy on Earth', function(){
     let seniorCalculator = new Calculator(79);
-    let result = seniorCalculator.compareToEarthExpectancy();
+    let result = seniorCalculator.planetExpectancy("Earth");
     expect(result).toEqual("Your age is at the average life expectancy in Earth years.");
   })
 
   it('will return a message if age exceeds life expectancy on Earth', function(){
     let seniorCalculator = new Calculator(90);
-    let result = seniorCalculator.compareToEarthExpectancy();
+    let result = seniorCalculator.planetExpectancy("Earth");
     expect(result).toEqual("Your age is 11 years past the average life expectancy in Earth years.");
   })
 
   it('will return difference between current age and life expectancy in Mercury years', function(){
-    let result = reusableCalculator.mercuryExpectancy();
+    let result = reusableCalculator.planetExpectancy("Mercury");
     expect(result).toEqual("Your age is 204 years less than the average life expectancy in Mercury years.");
   })
 
   it('will return a message if age equals life expectancy on Mercury', function(){
     let seniorCalculator = new Calculator(79);
-    let result = seniorCalculator.mercuryExpectancy();
+    let result = seniorCalculator.planetExpectancy("Mercury");
     expect(result).toEqual("Your age is at the average life expectancy in Mercury years.");
   })
 
   it('will return a message if age exceeds life expectancy on Mercury', function(){
     let seniorCalculator = new Calculator(90);
-    let result = seniorCalculator.mercuryExpectancy();
+    let result = seniorCalculator.planetExpectancy("Mercury");
     expect(result).toEqual("Your age is 46 years past the average life expectancy in Mercury years.");
   })
 
   it('will return difference between current age and life expectancy in Venus years', function(){
-    let result = reusableCalculator.venusExpectancy();
+    let result = reusableCalculator.planetExpectancy("Venus");
     expect(result).toEqual("Your age is 79 years less than the average life expectancy in Venus years.");
   })
 
   it('will return a message if age equals life expectancy on Venus', function(){
     let seniorCalculator = new Calculator(79);
-    let result = seniorCalculator.venusExpectancy();
+    let result = seniorCalculator.planetExpectancy("Venus");
     expect(result).toEqual("Your age is at the average life expectancy in Venus years.");
   })
 
   it('will return a message if age exceeds life expectancy on Venus', function(){
     let seniorCalculator = new Calculator(90);
-    let result = seniorCalculator.venusExpectancy();
+    let result = seniorCalculator.planetExpectancy("Venus");
     expect(result).toEqual("Your age is 18 years past the average life expectancy in Venus years.");
   })
 
   it('will return difference between current age and life expectancy in Mars years', function(){
-    let result = reusableCalculator.marsExpectancy();
+    let result = reusableCalculator.planetExpectancy("Mars");
     expect(result).toEqual("Your age is 26 years less than the average life expectancy in Mars years.");
   })
 
   it('will return a message if age equals life expectancy on Mars', function(){
     let seniorCalculator = new Calculator(79);
-    let result = seniorCalculator.marsExpectancy();
+    let result = seniorCalculator.planetExpectancy("Mars");
     expect(result).toEqual("Your age is at the average life expectancy in Mars years.");
   })
 
   it('will return a message if age exceeds life expectancy on Mars', function(){
     let seniorCalculator = new Calculator(90);
-    let result = seniorCalculator.marsExpectancy();
+    let result = seniorCalculator.planetExpectancy("Mars");
     expect(result).toEqual("Your age is 6 years past the average life expectancy in Mars years.");
   })
 
   it('will return difference between current age and life expectancy in Jupiter years', function(){
-    let result = reusableCalculator.jupiterExpectancy();
+    let result = reusableCalculator.planetExpectancy("Jupiter");
     expect(result).toEqual("Your age is 4 years less than the average life expectancy in Jupiter years.");
   })
 
   it('will return a message if age equals life expectancy on Jupiter', function(){
     let seniorCalculator = new Calculator(79);
-    let result = seniorCalculator.jupiterExpectancy();
+    let result = seniorCalculator.planetExpectancy("Jupiter");
     expect(result).toEqual("Your age is at the average life expectancy in Jupiter years.");
   })
 
   it('will return a message if age exceeds life expectancy on Jupiter', function(){
     let seniorCalculator = new Calculator(90);
-    let result = seniorCalculator.jupiterExpectancy();
+    let result = seniorCalculator.planetExpectancy("Jupiter");
     expect(result).toEqual("Your age is 1 years past the average life expectancy in Jupiter years.");
   })
 

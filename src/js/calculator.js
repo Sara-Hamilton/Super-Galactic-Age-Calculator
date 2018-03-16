@@ -70,7 +70,7 @@ export class Calculator {
     if (difference > 0) {
       return `Your age is ${difference} years less than the average life expectancy in ${planet} years.`;
     } else if (difference === 0) {
-      return "Your age is at the average life expectancy in ${planet} years."
+      return `Your age is at the average life expectancy in ${planet} years.`
     } else {
       return `Your age is ${-difference} years past the average life expectancy in ${planet} years.`;
     }
