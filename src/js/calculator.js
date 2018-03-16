@@ -50,4 +50,10 @@ export class Calculator {
     return difference;
   }
 
+  marsExpectancy() {
+    const lifeExpectancy = 79;
+    let difference = Math.floor((lifeExpectancy - this.earthAge)/1.88);
+    return difference;
+  }
+
 }

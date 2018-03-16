@@ -59,4 +59,9 @@ describe('Calculator', function() {
     let result = reusableCalculator.venusExpectancy();
     expect(result).toEqual(79);
   })
+
+  it('will return difference between current age and life expectancy in Mars years', function(){
+    let result = reusableCalculator.marsExpectancy();
+    expect(result).toEqual(30);
+  })
 })
