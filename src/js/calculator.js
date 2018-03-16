@@ -13,17 +13,22 @@ export class Calculator {
   }
 
   ageOnMercury() {
-    let mercuryAge = Math.round(this.earthAge/.24);
+    let mercuryAge = Math.floor(this.earthAge/.24);
     return mercuryAge;
   }
 
   ageOnVenus() {
-    let venusAge = Math.round(this.earthAge/.62);
+    let venusAge = Math.floor(this.earthAge/.62);
     return venusAge;
   }
 
   ageOnMars() {
-    let marsAge = Math.round(this.earthAge/1.88);
+    let marsAge = Math.floor(this.earthAge/1.88);
     return marsAge;
+  }
+
+  ageOnJupiter() {
+    let jupiterAge = Math.floor(this.earthAge/11.86);
+    return jupiterAge;
   }
 }
