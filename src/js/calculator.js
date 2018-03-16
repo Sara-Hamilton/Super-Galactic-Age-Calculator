@@ -35,7 +35,11 @@ export class Calculator {
   compareToEarthExpectancy() {
     const lifeExpectancy = 79;
     let difference = lifeExpectancy - this.earthAge;
-    return difference;
+    if (difference >= 0) {
+      return `Your age is ${difference} years less than the average life expectancy.`;
+    } else {
+      return `Your age is ${-difference} years past the average life expectancy.`;
+    }
   }
 
   mercuryExpectancy() {
