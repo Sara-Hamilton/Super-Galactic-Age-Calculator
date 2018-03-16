@@ -16,6 +16,6 @@ describe('Calculator', function() {
     let date1 = new Date('April 1, 2010');
     let date2 = new Date('April 1, 2011');
     let result = reusableCalculator.secondsBetweenDates(date1, date2);
-    expect(result).toEqual(1);
+    expect(result).toEqual(31536000);
   })
 })
