@@ -12,6 +12,28 @@ export class Calculator {
     return difference;
   }
 
+  ageOnPlanet(planet) {
+    let factor = 0;
+    switch (planet) {
+      case 'Mercury':
+        factor = .24;
+        break;
+      case 'Venus':
+        factor = .62;
+        break;
+      case 'Mars':
+        factor = 1.88;
+        break;
+      case 'Jupiter':
+        factor = 11.86;
+        break;
+      default:
+        factor = 1;
+    }
+    let planetAge = Math.floor(this.earthAge/factor);
+    return planetAge;
+  }
+
   ageOnMercury() {
     let mercuryAge = Math.floor(this.earthAge/.24);
     return mercuryAge;
