@@ -83,7 +83,13 @@ export class Calculator {
   jupiterExpectancy() {
     const lifeExpectancy = 79;
     let difference = Math.floor((lifeExpectancy - this.earthAge)/11.86);
-    return difference;
+    if (difference > 0) {
+      return `Your age is ${difference} years less than the average life expectancy in Jupiter years.`;
+    } else if (difference === 0) {
+      return "Your age is at the average life expectancy in Jupiter years."
+    } else {
+      return `Your age is ${-difference} years past the average life expectancy in Jupiter years.`;
+    }
   }
 
 }
