@@ -20,22 +20,22 @@ describe('Calculator', function() {
   })
 
   it('will convert Earth age to Mercury age', function(){
-    let result = reusableCalculator.ageOnMercury();
+    let result = reusableCalculator.ageOnPlanet("Mercury");
     expect(result).toEqual(125);
   })
 
   it('will convert Earth age to Venus age', function(){
-    let result = reusableCalculator.ageOnVenus();
+    let result = reusableCalculator.ageOnPlanet("Venus");
     expect(result).toEqual(48);
   })
 
   it('will convert Earth age to Mars age', function(){
-    let result = reusableCalculator.ageOnMars();
+    let result = reusableCalculator.ageOnPlanet("Mars");
     expect(result).toEqual(15);
   })
 
   it('will convert Earth age to Jupiter age', function(){
-    let result = reusableCalculator.ageOnJupiter();
+    let result = reusableCalculator.ageOnPlanet("Jupiter");
     expect(result).toEqual(2);
   })
 
