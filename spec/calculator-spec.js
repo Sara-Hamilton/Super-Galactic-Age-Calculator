@@ -57,6 +57,6 @@ describe('Calculator', function() {
 
   it('will return difference between current age and life expectancy in Venus years', function(){
     let result = reusableCalculator.venusExpectancy();
-    expect(result).toEqual(30);
+    expect(result).toEqual(79);
   })
 })
