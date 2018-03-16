@@ -19,10 +19,10 @@ _This is the Epicodus weekly project for week 1 of the JavaScript course. Its pu
   * sample output: 31,536,000
 * Take in a person's age and return the age in Mercury years. (A Mercury year is .24 Earth years.)
   * sample input: 30
-  * sample output: 187
+  * sample output: 125
 * Take in a person's age and return the age in Venus years. (A Venus year is .62 Earth years.)
   * sample input: 30
-  * sample output: 49
+  * sample output: 48
 * Take in a person's age and return the age in Mars years. (A Mars year is 1.88 Earth years.)
   * sample input: 30
   * sample output: 16

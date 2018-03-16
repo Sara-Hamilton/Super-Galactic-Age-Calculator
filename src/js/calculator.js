@@ -11,4 +11,9 @@ export class Calculator {
     let difference = Math.abs(date1 - date2)/1000;
     return difference;
   }
+
+  ageOnMercury() {
+    let mercuryAge = Math.round(this.earthAge/.24);
+    return mercuryAge;
+  }
 }

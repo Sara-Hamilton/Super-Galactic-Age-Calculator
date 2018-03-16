@@ -18,4 +18,9 @@ describe('Calculator', function() {
     let result = reusableCalculator.secondsBetweenDates(date1, date2);
     expect(result).toEqual(31536000);
   })
+
+  it('will convert Earth age to Mercury age', function(){
+    let result = reusableCalculator.ageOnMercury();
+    expect(result).toEqual(30);
+  })
 })
